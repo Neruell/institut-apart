@@ -1,0 +1,60 @@
+.dos-left-img {
+    float: left;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.dos-right-img {
+    width: 100%;
+    float: right;
+    padding-right: 15px;
+}
+
+.background-image-2 {
+    background-image: url(../images/Logo.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+@media (max-width: 1199px) {
+    .collapse-center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 991px) {
+    .collapse-max-width {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .dos-right-img {
+        width: auto;
+        float: none;
+        padding: 0px 0px;
+        border-radius: 0px;
+    }
+    .dos-left-img {
+        width: auto;
+        float: none;
+        padding: 0px 0px;
+        border-radius: 0px;
+    }
+    .center-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .collapse-max-height {
+        max-height: 450px;
+        width: auto;
+        float: left;
+    }
+    .equal {
+        display: block;
+    }
+}
