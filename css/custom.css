@@ -330,6 +330,28 @@ body {
   margin-top: 20px !important;
 }
 
+.sugaring-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.sugaring-section .sugaring-section__text {
+  flex: 1 1 100%;
+  margin-bottom: 3rem;
+}
+
+.sugaring-section .sugaring-section__img {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+
+.sugaring-section img {
+  max-width: 250px;
+}
+
 .price-section__fluid {
   padding: 8rem 0;
   background: rgba(150, 150, 150, 0.2);
@@ -421,5 +443,23 @@ body {
   .price > .price__price {
     text-align: right;
     flex: 1 1 33%;
+  }
+
+  .sugaring-section .sugaring-section__text {
+    flex: 1 1 50%;
+    padding: 0 2rem;
+  }
+
+  .sugaring-section .sugaring-section__img {
+    flex: 1 1 50%;
+    padding: 0 2rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 990px) {
+  .sugaring-section .sugaring-section__text {
+    flex: 1 1 50%;
+    padding: 0 2rem 0 10rem;
   }
 }
