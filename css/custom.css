@@ -124,9 +124,11 @@ body {
   .text-right {
     text-align: center;
   }
+
   .special-hr {
     display: none;
   }
+
   .special-br2 {
     display: none;
   }
@@ -136,12 +138,15 @@ body {
   .text-right {
     text-align: right;
   }
+
   .special-font {
     font-size: medium;
   }
+
   .special-space {
     padding: 20px 0;
   }
+
   .special-br {
     display: block !important;
   }
@@ -151,13 +156,16 @@ body {
   .collapse-center {
     text-align: center;
   }
+
   .collapse-width-margin {
     width: 330px;
     margin: auto auto;
   }
+
   .div-half-width {
     width: 50%;
   }
+
   .special-br {
     display: block;
   }
@@ -174,6 +182,7 @@ body {
     width: 75%;
     margin: 0 auto;
   }
+
   .special-br {
     display: none;
   }
@@ -184,12 +193,15 @@ body {
     width: auto;
     margin: auto auto;
   }
+
   .interier-carousel {
     width: 100%;
   }
+
   .hidden-xxs {
     display: none !important;
   }
+
   .slider-size {
     height: 200px;
     /* This is your slider height */
@@ -352,12 +364,37 @@ body {
   max-width: 250px;
 }
 
+.microblading__text {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.microblading__img {
+  display: grid;
+  gap: 6rem;
+}
+
+.microblading__img img {
+  height: 260px;
+}
+
+.microblading__img figcaption {
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .microblading__img {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: stretch;
+  }
+}
+
 .price-section__fluid {
   padding: 8rem 0;
   background: rgba(150, 150, 150, 0.2);
 }
 
-.price-section > hr {
+.price-section>hr {
   margin: 5rem 0;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -375,6 +412,15 @@ body {
   flex-flow: column nowrap;
 }
 
+.price-section__prices-column.-details {
+  cursor: pointer;
+  text-align: center;
+}
+
+.price-section__prices-column.-details>details[open] {
+  margin-bottom: 4rem;
+}
+
 .price-section__prices-row {
   display: flex;
   justify-content: center;
@@ -382,8 +428,8 @@ body {
   flex-flow: row wrap;
 }
 
-.price-section__prices-column > .price,
-.price-section__prices-row > .price {
+.price-section__prices-column .price,
+.price-section__prices-row .price {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -392,55 +438,56 @@ body {
   font-size: 2rem;
 }
 
-.price-section__prices-row > .price {
+.price-section__prices-row .price {
   flex: 1 0 100%;
 }
 
-.price-section__prices-column > .price:hover,
-.price-section__prices-column > .price:active,
-.price-section__prices-column > .price:focus,
-.price-section__prices-column > .price:focus:active,
-.price-section__prices-column > .price:hover:hover,
-.price-section__prices-row > .price:hover,
-.price-section__prices-row > .price:active,
-.price-section__prices-row > .price:focus,
-.price-section__prices-row > .price:focus:active,
-.price-section__prices-row > .price:hover:hover {
+.price-section__prices-column .price:hover,
+.price-section__prices-column .price:active,
+.price-section__prices-column .price:focus,
+.price-section__prices-column .price:focus:active,
+.price-section__prices-column .price:hover:hover,
+.price-section__prices-row .price:hover,
+.price-section__prices-row .price:active,
+.price-section__prices-row .price:focus,
+.price-section__prices-row .price:focus:active,
+.price-section__prices-row .price:hover:hover {
   color: var(--honey-color);
 }
 
-.price > .price__name {
+.price>.price__name {
   text-align: left;
   flex: 1 1 60%;
 }
 
-.price > .price__price {
+.price>.price__price {
   text-align: right;
   flex: 1 1 40%;
 }
 
-.price > .price__name--full {
+.price>.price__name--full {
   flex: 1 0 100%;
 }
 
 @media (min-width: 768px) {
-  .price-section__prices-row > .price,
-  .price-section__prices-column > .price {
+
+  .price-section__prices-row .price,
+  .price-section__prices-column .price {
     flex: 1 1 50%;
     padding: 2rem;
   }
 
-  .price > .price__name {
+  .price>.price__name {
     text-align: left;
     flex: 1 1 33%;
   }
 
-  .price > .price__dots {
+  .price>.price__dots {
     text-align: center;
     flex: 1 1 33%;
   }
 
-  .price > .price__price {
+  .price>.price__price {
     text-align: right;
     flex: 1 1 33%;
   }
