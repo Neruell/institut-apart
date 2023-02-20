@@ -378,6 +378,24 @@ body {
   height: 260px;
 }
 
+.microblading__img1 {
+  justify-self: center;
+}
+
+.microblading__img2 {
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .microblading__img1 {
+    justify-self: end;
+  }
+
+  .microblading__img2 {
+    justify-self: start;
+  }
+}
+
 .microblading__img figcaption {
   text-align: center;
 }
